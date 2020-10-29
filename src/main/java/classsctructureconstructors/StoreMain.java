@@ -4,7 +4,7 @@ public class StoreMain {
 
     public static void main(String[] args) {
         Store storeA = new Store("túlélőkészlet");
-        Store storeB = new Store("kertitörpe");
+        Store storeB = new Store("kerti törpe");
 
         System.out.println("A raktárakban van: " + storeA.getStock() + "db " + storeA.getProduct() + ", illetve " + storeB.getStock() + "db " + storeB.getProduct() + ".");
         System.out.println();
