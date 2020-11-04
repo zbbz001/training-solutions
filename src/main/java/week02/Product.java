@@ -13,6 +13,10 @@ public class Product {
         return name;
     }
 
+    public String getCode() {
+        return code;
+    }
+
     public boolean areTheyEqual(Product p) {
         return name.equals(p.getName());
     }
