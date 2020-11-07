@@ -33,14 +33,14 @@ public class Office {
 
     public void printAreas() {
         for (MeetingRoom meetingRoom : meetingRooms) {
-            System.out.println(meetingRoom.toString());
+            System.out.println(meetingRoom);
         }
     }
 
     public void printMeetingRoomsWithName(String name) {
         for (MeetingRoom meetingRoom : meetingRooms) {
             if(meetingRoom.getName().equals(name)) {
-                System.out.println(meetingRoom.toString());
+                System.out.println(meetingRoom);
             }
         }
     }
@@ -48,7 +48,7 @@ public class Office {
     public void printMeetingRoomsContains(String name) {
         for (MeetingRoom meetingRoom : meetingRooms) {
             if(meetingRoom.getName().contains(name)) {
-                System.out.println(meetingRoom.toString());
+                System.out.println(meetingRoom);
             }
         }
     }
@@ -56,7 +56,7 @@ public class Office {
     public void printAreasLargerThan(int area) {
         for (MeetingRoom meetingRoom : meetingRooms) {
             if(meetingRoom.getArea() > area) {
-                System.out.println(meetingRoom.toString());
+                System.out.println(meetingRoom);
             }
         }
     }
