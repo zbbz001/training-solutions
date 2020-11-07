@@ -38,4 +38,13 @@ public class MeetingRoom {
     public void setWidth(int width) {
         this.width = width;
     }
+
+    @Override
+    public String toString() {
+        return "Az iroda neve: " + name + "\n" +
+                "  szélessége: " + length + "\n" +
+                "  hosszúsága: " + width + "\n" +
+                "  területe: " + getArea()+ "\n";
+    }
+
 }
