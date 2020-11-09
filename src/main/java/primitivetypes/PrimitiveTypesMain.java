@@ -11,7 +11,10 @@ public class PrimitiveTypesMain {
 
         System.out.println(new Integer(1) + new Integer(2));
 
-
+        boolean b = Boolean.parseBoolean("ajaj");
+        int a = Integer.parseInt("23");
+        String s = Integer.toString(23);
+        System.out.println(s);
 
     }
 
