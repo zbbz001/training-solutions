@@ -29,5 +29,6 @@ public class Greetings {
         System.out.println(greetings.sayGreeting(9, 10));
         System.out.println(greetings.sayGreeting(19, 10));
         System.out.println(greetings.sayGreeting(20, 10));
+        System.out.println(greetings.sayGreeting(20, 0));
     }
 }
