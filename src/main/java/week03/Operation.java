@@ -12,4 +12,5 @@ public class Operation {
     public int getResult() {
         return left + right;
     }
+
 }
