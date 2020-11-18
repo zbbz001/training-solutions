@@ -24,9 +24,9 @@ public class NumberGuesser {
                 tipNumber = scanner.nextInt();
 
                 if (thoughtNumber > tipNumber && rounds <= MAX_ROUNDS) {
-                    System.out.println("Nem találd a gondolt szám nagyobb, próbáld újra!");
+                    System.out.println("Nem talált, a gondolt szám nagyobb, próbáld újra!");
                 } else if (thoughtNumber < tipNumber && rounds <= MAX_ROUNDS) {
-                    System.out.println("Nem találd a gondolt szám kisebb, próbáld újra!");
+                    System.out.println("Nem talált, a gondolt szám kisebb, próbáld újra!");
                 }
 
                 rounds++;
