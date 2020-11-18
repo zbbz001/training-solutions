@@ -39,7 +39,7 @@ public class NumberGuesser {
         if (thoughtNumber == tipNumber) {
             System.out.println("Nyertél!");
         } else {
-            System.out.println("Vesztettél! A gondolot szá:" + thoughtNumber);
+            System.out.println("Vesztettél! A gondolot szám:" + thoughtNumber);
         }
 
 
