@@ -4,6 +4,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class NumberGuesser {
+    private static final int MAX_ROUNDS = 7;
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -16,15 +17,15 @@ public class NumberGuesser {
 
         int tipNumber = 1;
 
-        while (thoughtNumber != tipNumber && rounds < 7) {
+        while (thoughtNumber != tipNumber && rounds < MAX_ROUNDS) {
             System.out.print("Tipp " + rounds + ". kör:");
 
             try {
                 tipNumber = scanner.nextInt();
 
-                if (thoughtNumber > tipNumber && rounds < 7) {
+                if (thoughtNumber > tipNumber && rounds < MAX_ROUNDS) {
                     System.out.println("Nem találd a gondolt szám nagyobb, próbáld újra!");
-                } else if (thoughtNumber < tipNumber && rounds < 7) {
+                } else if (thoughtNumber < tipNumber && rounds < MAX_ROUNDS) {
                     System.out.println("Nem találd a gondolt szám kisebb, próbáld újra!");
                 }
 
