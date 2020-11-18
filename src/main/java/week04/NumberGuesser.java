@@ -10,28 +10,37 @@ public class NumberGuesser {
         Random rnd = new Random();
 
         int thoughtNumber = rnd.nextInt(100) + 1;
+        int rounds = 1;
 
         System.out.println("Gondoltam egy számra 1-100 között, találd ki!");
 
-        int tipNumber = 0;
+        int tipNumber = 1;
 
-        while (thoughtNumber != tipNumber) {
-            System.out.print("Tipp:");
+        while (thoughtNumber != tipNumber && rounds < 7) {
+            System.out.print("Tipp " + rounds + ". kör:");
 
             try {
                 tipNumber = scanner.nextInt();
 
-                if (thoughtNumber > tipNumber) {
+                if (thoughtNumber > tipNumber && rounds < 7) {
                     System.out.println("Nem találd a gondolt szám nagyobb, próbáld újra!");
-                } else if (thoughtNumber < tipNumber) {
+                } else if (thoughtNumber < tipNumber && rounds < 7) {
                     System.out.println("Nem találd a gondolt szám kisebb, próbáld újra!");
                 }
+
+                rounds++;
             } catch (Exception ime) {
                 System.out.println("Na ez nem szám volt, próbáld újra!");
                 scanner.nextLine();
             }
         }
 
-        System.out.println("Nyertél");
+        if (thoughtNumber == tipNumber) {
+            System.out.println("Nyertél!");
+        } else {
+            System.out.println("Vesztettél! A gondolot szá:" + thoughtNumber);
+        }
+
+
     }
 }
