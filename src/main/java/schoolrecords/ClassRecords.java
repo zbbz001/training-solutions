@@ -10,6 +10,10 @@ public class ClassRecords {
     private Random rnd;
     private List<Student> students = new ArrayList<>();
 
+    public List<Student> getStudents() {
+        return students;
+    }
+
     public ClassRecords(String className, Random rnd, List<Student> students) {
         this.className = className;
         this.rnd = rnd;
