@@ -16,13 +16,4 @@ public class Search {
 
         return result;
     }
-
-    public static void main(String[] args) {
-        Search search = new Search();
-
-        System.out.println(search.getIndexesOfChar("mississippi", 'i'));
-        System.out.println(search.getIndexesOfChar("mississippi", 's'));
-        System.out.println(search.getIndexesOfChar("mississippi", 'p'));
-        System.out.println(search.getIndexesOfChar("mississippi", 'm'));
-    }
 }
