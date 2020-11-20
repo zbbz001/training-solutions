@@ -9,7 +9,7 @@ public class Search {
         List<Integer> result = new ArrayList<>();
 
         for (int i = 0; i < str.length(); i++) {
-            if (str.charAt(i) == c ) {
+            if (str.charAt(i) == c) {
                 result.add(i);
             }
         }
