@@ -21,4 +21,21 @@ class ListCounterTest {
 
         assertEquals(3, listCounter.initialLetterCounter(words));
     }
+
+    @Test
+    public void testListCounterEmptyList() {
+        ListCounter listCounter = new ListCounter();
+        List<String> words = new ArrayList<>();
+
+        assertEquals(0, listCounter.initialLetterCounter(words));
+    }
+
+    @Test
+    public void testListCounterNoSearchedLetter() {
+        ListCounter listCounter = new ListCounter();
+        List<String> words = new ArrayList<>();
+        words.add("cheese");
+
+        assertEquals(0, listCounter.initialLetterCounter(words));
+    }
 }
