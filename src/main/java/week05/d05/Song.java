@@ -5,7 +5,6 @@ public class Song {
     private long lengthInSeconds;
     private String artist;
 
-
     public Song(String name, long lengthInSeconds, String artist) {
         this.name = name;
         this.lengthInSeconds = lengthInSeconds;

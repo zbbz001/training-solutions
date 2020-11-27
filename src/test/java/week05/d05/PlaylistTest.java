@@ -12,9 +12,9 @@ class PlaylistTest {
     @Test
     public void testPlaylist() {
         List<Song> songList = new ArrayList<>();
-        songList.add(new Song("Smells Like Teen Spirit", 277,"Nirvana"));
-        songList.add(new Song("Highway Star", 205,"Deep Purple"));
-        songList.add(new Song("Don't Look Back in Anger", 210,"Oasis"));
+        songList.add(new Song("Smells Like Teen Spirit", 277, "Nirvana"));
+        songList.add(new Song("Highway Star", 205, "Deep Purple"));
+        songList.add(new Song("Don't Look Back in Anger", 210, "Oasis"));
 
         Playlist playlist = new Playlist(songList);
 

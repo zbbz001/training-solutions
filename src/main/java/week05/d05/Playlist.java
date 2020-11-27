@@ -12,8 +12,8 @@ public class Playlist {
 
     public List<Song> findByLengthGreaterThan(int mins) {
         List<Song> filteredSongs = new ArrayList<>();
-        for(Song song:songList) {
-            if(song.getLengthInSeconds() > mins * 60) {
+        for (Song song : songList) {
+            if (song.getLengthInSeconds() > mins * 60) {
                 filteredSongs.add(song);
             }
         }
