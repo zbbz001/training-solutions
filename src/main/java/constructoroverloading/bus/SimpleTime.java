@@ -37,6 +37,4 @@ public class SimpleTime {
     public int getMinutes() {
         return minutes;
     }
-
-
 }
