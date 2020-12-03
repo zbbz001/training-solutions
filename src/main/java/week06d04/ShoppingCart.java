@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ShoppingCart {
-    private List<Item> shoppingChart = new ArrayList<>();
+    private List<Item> shoppingCart = new ArrayList<>();
 
     public void addItem(String name, int quantity) {
         if(isEmpty(name)) {
@@ -25,12 +25,12 @@ public class ShoppingCart {
         if(chartItem != null) {
             chartItem.addQuantity(item.getQuantity());
         } else {
-            shoppingChart.add(item);
+            shoppingCart.add(item);
         }
     }
 
     private Item getItemByName(String name) {
-        for(Item chartItem:shoppingChart) {
+        for(Item chartItem:shoppingCart) {
             if(chartItem.getName().equals(name)) {
                 return chartItem;
             }
@@ -43,6 +43,6 @@ public class ShoppingCart {
     }
 
     public List<Item> getShoppingChart() {
-        return shoppingChart;
+        return shoppingCart;
     }
 }
