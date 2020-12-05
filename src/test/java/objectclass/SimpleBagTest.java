@@ -1,5 +1,8 @@
 package objectclass;
 
+import org.hamcrest.CoreMatchers;
+import org.hamcrest.core.StringContains;
+import org.junit.Assert;
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.equalTo;
@@ -14,8 +17,8 @@ public class SimpleBagTest {
         //Given
         SimpleBag bag = new SimpleBag();
         //Then
-        assertThat(bag.isEmpty(), is(true));
-        assertThat(bag.size(), equalTo(0));
+        Assert.assertThat(bag.isEmpty(), CoreMatchers.is(true));
+        Assert.assertThat(bag.size(), CoreMatchers.equalTo(0));
     }
 
 
@@ -28,8 +31,8 @@ public class SimpleBagTest {
         bag.putItem((new Book("Rejtő Jenő", "Az ellopott cirkáló")));
         bag.putItem(new Beer("Borsodi", 239));
         //Then
-        assertThat(bag.isEmpty(),equalTo(false));
-        assertThat(bag.size(), equalTo(3));
+        Assert.assertThat(bag.isEmpty(), CoreMatchers.equalTo(false));
+        Assert.assertThat(bag.size(), CoreMatchers.equalTo(3));
 
     }
 
@@ -43,9 +46,9 @@ public class SimpleBagTest {
         bag.putItem(new Beer("Borsodi", 239));
         //Then
         while (bag.hasNext()) {
-            assertThat(bag.next().getClass().toString(), containsString("objectclass.B"));
+            Assert.assertThat(bag.next().getClass().toString(), StringContains.containsString("objectclass.B"));
         }
-        assertThat(bag.getCursor(), equalTo(2));
+        Assert.assertThat(bag.getCursor(), CoreMatchers.equalTo(2));
     }
 
     @Test
@@ -56,8 +59,8 @@ public class SimpleBagTest {
         bag.putItem(new Beer("Borsodi", 239));
         bag.putItem(new Book("Rejtő Jenő", "Az ellopott cirkáló"));
         //Then
-        assertThat(bag.contains(new Beer("Borsodi", 239)), is(true));
-        assertThat(bag.contains(new Book("Rejtő Jenő", "Az ellopott cirkáló")), is(true));
-        assertThat(bag.contains(new Book("Rejtő Jenő", "A megkerült cirkáló")), is(false));
+        Assert.assertThat(bag.contains(new Beer("Borsodi", 239)), CoreMatchers.is(true));
+        Assert.assertThat(bag.contains(new Book("Rejtő Jenő", "Az ellopott cirkáló")), CoreMatchers.is(true));
+        Assert.assertThat(bag.contains(new Book("Rejtő Jenő", "A megkerült cirkáló")), CoreMatchers.is(false));
     }
 }
