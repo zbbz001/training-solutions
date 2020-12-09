@@ -18,15 +18,27 @@ public class Date {
     }
 
     public Date withYear(int year) {
-        return new Date(year, this.month, this.day);
+        return new Date(year, getMonth(), getDay());
     }
 
     public Date withMonth(int month) {
-        return new Date(this.year, month, this.day);
+        return new Date(getYear(), month, getDay());
     }
 
     public Date withDay(int day) {
-        return new Date(this.year, this.month, day);
+        return new Date(getYear(), getMonth(), day);
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public int getMonth() {
+        return month;
+    }
+
+    public int getDay() {
+        return day;
     }
 
     @Override
