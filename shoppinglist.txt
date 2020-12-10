@@ -1,0 +1,4 @@
+First Aid;1;100
+Glass ball;100;32
+Rainbow;1;999
+Unicornis;27;7000
