@@ -1,4 +1,4 @@
-package week06.d04;
+package week06d04;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
