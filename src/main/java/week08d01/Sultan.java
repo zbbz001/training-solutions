@@ -8,13 +8,13 @@ public class Sultan {
         List<Cell> openedCells = new ArrayList<>();
 
         for (int i = 0; i < day; i++) {
-            rotateCellDoors(cells, i);
+            rotateCellLock(cells, i);
         }
 
         return openedDoors(cells);
     }
 
-    private void rotateCellDoors(List<Cell> cells, int i) {
+    private void rotateCellLock(List<Cell> cells, int i) {
         for (Cell cell : cells) {
             if (cell.getCellNumber() % (i + 1) == 0) {
                 cell.lockRotate();
