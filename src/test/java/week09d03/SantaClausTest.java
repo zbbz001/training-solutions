@@ -22,7 +22,7 @@ class SantaClausTest {
             if (person.getAge() < 15) {
                 assertTrue(List.of(Present.values()).contains(person.getPresent()));
             } else {
-                assertTrue(person.getPresent() == null);
+                assertTrue(List.of(Present.values()).contains(person.getPresent()) && !person.getPresent().equals(Present.Toy));
             }
         }
     }
