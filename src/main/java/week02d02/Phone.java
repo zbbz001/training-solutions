@@ -1,4 +1,4 @@
-package week02;
+package week02d02;
 
 public class Phone {
     private int mem;

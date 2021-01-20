@@ -1,4 +1,6 @@
-package week02;
+package week02d02;
+
+import week02d02.Phone;
 
 import java.util.Scanner;
 
