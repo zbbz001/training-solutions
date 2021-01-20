@@ -22,7 +22,6 @@ public class Activities {
             addToReport(activity, reportList);
         }
 
-        System.out.println(reportList.toString());
         return reportList;
     }
 
