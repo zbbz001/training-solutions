@@ -7,6 +7,7 @@ import java.util.*;
 
 public class FenceManager {
     private Map<String, List<Fence>> fences = new HashMap<>();
+    private int lastHouseNumber;
 
     public FenceManager() {
         fences.put("odd", new ArrayList<Fence>());
@@ -62,7 +63,9 @@ public class FenceManager {
             fenceList = fences.get("even");
         }
 
-        fence.setHouseNumber(base + fenceList.size() * 2);
+        lastHouseNumber = base + fenceList.size() * 2;
+
+        fence.setHouseNumber(lastHouseNumber);
 
         fenceList.add(fence);
     }
@@ -77,5 +80,9 @@ public class FenceManager {
         Collections.sort(sorted);
 
         return sorted;
+    }
+
+    public int getLastHouseNumber() {
+        return lastHouseNumber;
     }
 }
