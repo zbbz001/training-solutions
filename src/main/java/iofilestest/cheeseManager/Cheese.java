@@ -1,4 +1,4 @@
-package iofiletest.cheeseManager;
+package iofilestest.cheeseManager;
 
 public class Cheese {
     private String name;

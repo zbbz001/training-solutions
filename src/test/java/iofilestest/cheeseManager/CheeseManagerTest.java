@@ -1,6 +1,5 @@
-package iofiletest.cheeseManager;
+package iofilestest.cheeseManager;
 
-import iofiletest.library.Library;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TemporaryFolder;

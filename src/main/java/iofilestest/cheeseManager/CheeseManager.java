@@ -1,6 +1,4 @@
-package iofiletest.cheeseManager;
-
-import iofiletest.library.Book;
+package iofilestest.cheeseManager;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;

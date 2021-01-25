@@ -1,4 +1,4 @@
-package iofiletest.library;
+package iofilestest.library;
 
 import org.junit.Rule;
 import org.junit.Test;
