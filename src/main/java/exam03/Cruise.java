@@ -1,7 +1,5 @@
 package exam03;
 
-import week1601.CanoeRental;
-
 import java.time.LocalDate;
 import java.util.*;
 import java.util.function.Function;
